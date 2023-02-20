@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .dropdown{
+            display: flex;
+            list-style-type: none;
+            margin-top: 100px;
+            justify-content: center;
+            margin-left: 150px;
+            
+        }
+        a{
+            display: block;
+            width: 200px;
+            background-color: black;
+            color: white;
+            text-align: center;
+           text-decoration: none;
+           padding: 10px;
+
+        }
+        a:hover{
+            background-color: blue;
+        }
+         .laptops{
+            list-style-type: none;
+            display: none;
+        }
+        .dropdown li:nth-child(2):hover .laptops{
+            display: block;
+        }
+        .lenovo{
+            list-style-type:none;
+            transform: translateX(200px) translateY(-45px);
+            position: absolute;
+            display: none;
+        }
+        .laptops li:nth-child(1):hover .lenovo{
+            display: block;
+        }
+        .model1{
+            list-style-type: none;
+            position: absolute;
+            transform:translateX(200px) translateY(-40px) ;
+            display: none; 
+        }
+        .lenovo li:nth-child(1):hover .model1{
+            display: block;
+        }
+        .model2{
+            list-style-type: none;
+            position: absolute;
+            transform: translateX(200px)translateY(-40px);
+            display: none;
+        }
+        .lenovo li:nth-child(2):hover .model2{
+            display: block;
+        }
+        .hp{
+            list-style-type: none;
+            position: absolute;
+            transform:translateX(200px)translateY(-40px);
+            display: none;
+        }
+        .laptops li:nth-child(3):hover .hp{
+            display: block;
+        }
+        .mobiles{
+            list-style-type: none;
+            position: absolute;
+            /* transform: translateX(200px) translateY(-5px); */
+            display: none;
+        }
+        .dropdown li:nth-child(1):hover .mobiles{
+            display: block;
+        } 
+    
+    </style>
+</head>
+<body>
+    <div class="navi">
+    <ul class="dropdown">
+       <li><a href="#"><i class="fa fa-mobile"></i> mobiles</a>
+        <ul class="mobiles">
+            <li><a href="#">apple</a></li>
+            <li><a href="#">samsung</a></li>
+            <li><a href="#">redmi</a></li>
+        </ul>
+    </li> 
+       <li>
+       <a href="#"><i class="fa fa-laptop"></i> laptops</a>
+       <ul class="laptops">
+        <li>
+        <a href="#">lenovo</a>
+        <ul class="lenovo">
+            <li>
+            <a href="#">model1</a> 
+            <ul class="model1">
+            <li><a href="#">model5</a></li>
+            <li><a href="#">model6</a></li>
+            </ul>
+            </li>
+            <li>
+                <a href="#">model2</a>
+                <ul class="model2">
+                    <li><a href="#">model7</a></li>
+                    <li><a href="#">model8</a></li>
+                </ul>
+            </li>
+            </li>
+        </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-apple"></i> apple</a></li>
+        <li>
+            <a href="#">hp</a>
+            <ul class="hp">
+                <li><a href="">hp1</a></li>
+                <li><a href="">hp2</a></li>
+                <li><a href="">hp3</a></li>
+            </ul>
+        </li>
+      </ul>
+      </li>
+       <li><a href="#"><i class="fa fa-headphone"></i> headphones</a></li>
+       <li><a href="#"><i class="fa fa-mobilecharger"></i> charger</a></li>
+    </ul>
+</div>
+</body>
+</html>
